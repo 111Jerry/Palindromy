@@ -5,10 +5,11 @@ def palindroms(word):
        which we have and return to us information,
        that it is palindrom or not. 
     """
-    word_input = []
-    word_output = []
-    for letter in word:
-        word_input.append(letter)
+    word_input = ""
+    word_output = ""
+    word_input = word
+    #for letter in word:
+    #   word_input.append(letter)
     word_output = word_input[::-1]
     if word_input == word_output:
         print("Podane przez Ciebie słowo to palindrom!")
