@@ -10,7 +10,7 @@ def palindroms(word):
     word_input = word
     word_output = word_input[::-1]
     if word_input != word_output:
-        print("Podane przez Ciebie słowo nie jest palindrom!")
+        print("Podane przez Ciebie słowo nie jest palindromem!")
     else:
         print("Podane przez Ciebie słowo jest palindromem.")            
     # print(word_input, word_output)
