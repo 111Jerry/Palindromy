@@ -5,15 +5,17 @@ def palindroms(word):
        which we have and return to us information,
        that it is palindrom or not. 
     """
-    set_of_word = []
+    word_input = []
+    word_output = []
     for letter in word:
-        set_of_word.append(letter)
-        print(set_of_word)
-    return set_of_word
+        word_input.append(letter)
+    word_output = word_input[-5:]
+    # print(word_output)
+    return word_input, word_output
+    
 
 
-word_input = []
-word_output = []
+
 # word_of_multiplication = word_input.intersection(word_output)
 # shopping_B.intersection(shopping_A)
 # print(dir(word_input))
@@ -29,9 +31,9 @@ def shopping(items, payment='card', shop='local shop'):
 """
 if __name__ == "__main__":
     text = input("Podaj proszę wyraz, aby sprawdzić czy nie jest on palindromem: ")
-    items = text.split(',')
-    shopping_result = palindroms(text)
-    print(shopping_result)
+    word = text.split(',')
+    all_result = palindroms(text)
+    print(all_result)
 
 """
 Pamiętaj, że wszystkie zadania, które wysyłasz Mentorowi powinny być umieszczone w Twoim zdalnym repozytorium,
