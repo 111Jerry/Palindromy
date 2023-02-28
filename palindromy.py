@@ -9,31 +9,16 @@ def palindroms(word):
     word_output = []
     for letter in word:
         word_input.append(letter)
-    word_output = word_input[-5:]
-    # print(word_output)
-    return word_input, word_output
-    
-
-
-
-# word_of_multiplication = word_input.intersection(word_output)
-# shopping_B.intersection(shopping_A)
-# print(dir(word_input))
-"""
-def shopping(items, payment='card', shop='local shop'):
-    result = ""
-    result = result + "Idę na zakupy do %s.\n" % shop
-    result = result + "Kupię następujące rzeczy:\n"
-    for item in items:
-        result = result + " - %s\n" % item
-    result = result + "By zapłacić, używam %s." % payment
-    return result
-"""
+    word_output = word_input[::-1]
+    if word_input == word_output:
+        print("Podane przez Ciebie słowo to palindrom!")
+    else:
+        print("Podane przez Ciebie słowo nie jest palindromem.")            
+    # print(word_input, word_output)
 if __name__ == "__main__":
-    text = input("Podaj proszę wyraz, aby sprawdzić czy nie jest on palindromem: ")
-    word = text.split(',')
-    all_result = palindroms(text)
-    print(all_result)
+    text = input("Podaj proszę wyraz, aby sprawdzić czy jest on palindromem: ")
+    palindroms(text)
+
 
 """
 Pamiętaj, że wszystkie zadania, które wysyłasz Mentorowi powinny być umieszczone w Twoim zdalnym repozytorium,
