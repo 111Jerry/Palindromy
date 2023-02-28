@@ -5,15 +5,14 @@ def palindroms(word):
        which we have and return to us information,
        that it is palindrom or not. 
     """
-    word_input = []
-    word_output = []
-    for letter in word:
-        word_input.append(letter)
+    word_input = ""
+    word_output = ""
+    word_input = word
     word_output = word_input[::-1]
-    if word_input == word_output:
-        print("Podane przez Ciebie słowo to palindrom!")
+    if word_input != word_output:
+        print("Podane przez Ciebie słowo nie jest palindrom!")
     else:
-        print("Podane przez Ciebie słowo nie jest palindromem.")            
+        print("Podane przez Ciebie słowo jest palindromem.")            
     # print(word_input, word_output)
 if __name__ == "__main__":
     text = input("Podaj proszę wyraz, aby sprawdzić czy jest on palindromem: ")
