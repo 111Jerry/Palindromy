@@ -6,19 +6,18 @@ def palindroms(word):
        that it is palindrom or not. 
     """
     result = "Podane słowo"
-    word_input = ""
-    word_output = ""
-    word_input = word
-    word_output = word_input[::-1]
-    if word_input != word_output:
+    word_output = word[::-1]
+    if word != word_output:
         result = result + " nie jest palindromem."
+        #print(bool(result))
     else:
-        result = result + " jest palindromem."           
+        result = result + " jest palindromem."
     return result
 if __name__ == "__main__":
     text = input("Wpisz wyraz, aby sprawdzić czy jest on palindromem:")
-    End = palindroms(text)    
-    print(End)
+    end = palindroms(text)
+    print(end)
+    
 
 """
 Pamiętaj, że wszystkie zadania, które wysyłasz Mentorowi powinny być umieszczone w Twoim zdalnym repozytorium,
