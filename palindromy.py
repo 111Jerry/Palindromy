@@ -12,7 +12,7 @@ def palindroms(word):
     if word_input != word_output:
         print("Podane przez Ciebie słowo nie jest palindromem!")
     else:
-        print("Podane przez Ciebie słowo jest palindromem!")            
+        print("Podane przez Ciebie słowo nie jest palindromem.")            
     # print(word_input, word_output)
 if __name__ == "__main__":
     text = input("Podaj proszę wyraz, aby sprawdzić czy jest on palindromem: ")
