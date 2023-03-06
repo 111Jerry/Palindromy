@@ -7,14 +7,15 @@ def palindroms(word):
     """
     result = "Podane słowo"
     word_output = word[::-1]
-    if word != word_output:
-        result = result + " nie jest palindromem."
-        #print(bool(result))
+    if word == word_output:
+        print(word == word_output)
+        result = result + "  jest palindromem."
     else:
-        result = result + " jest palindromem."
+        print(word == word_output)
+        result = result + " nie jest palindromem."
     return result
 if __name__ == "__main__":
-    text = input("Wpisz wyraz, aby sprawdzić czy jest on palindromem:")
+    text = input("Wpisz wyraz, aby sprawdzić czy jest on palindromem: ")
     end = palindroms(text)
     print(end)
     
